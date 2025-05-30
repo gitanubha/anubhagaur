@@ -1,106 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anubha Gaur | QA Automation Engineer</title>
-    <style>
-        body {
-            font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anubha Gaur | QA Automation Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --text: #333;
+      --accent: #64ffda;
+      --card-bg: #ffffff;
+    }
 
-        header {
-            background-color: #007acc;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
+    [data-theme='dark'] {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --card-bg: #161b22;
+    }
 
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: all 0.3s ease;
+    }
 
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 0.5rem;
-        }
+    header, footer {
+      background-color: var(--card-bg);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
 
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
 
-        li {
-            margin-bottom: 1rem;
-        }
+    nav {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
 
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #eee;
-            margin-top: 2rem;
-        }
-    </style>
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent);
+      color: black;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background-color: var(--card-bg);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--accent);
+    }
+
+    .projects {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+      background: var(--card-bg);
+      color: var(--text);
+    }
+
+    input[type="submit"] {
+      background-color: var(--accent);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    footer {
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Anubha Gaur</h1>
-        <p>QA Automation Engineer | Cypress | Selenium | JavaScript</p>
-    </header>
+  <button class="toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I'm a Quality Assurance Automation Engineer with hands-on experience in building robust, scalable test suites using Cypress and Selenium. I'm passionate about delivering bug-free software and ensuring a seamless user experience through automation.</p>
-    </section>
+  <header>
+    <h1>Anubha Gaur</h1>
+    <p>QA Automation Engineer | Cypress | Selenium | JavaScript</p>
+  </header>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>✅ QA Automation</li>
-            <li>✅ Cypress</li>
-            <li>✅ Selenium</li>
-            <li>✅ JavaScript</li>
-        </ul>
-    </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Project 1: E2E Automation for E-commerce</strong><br />
-                Built end-to-end Cypress test suite for a shopping platform. Covered checkout, payment, and user flow.<br />
-                <a href="https://github.com/your-username/project1">View on GitHub</a>
-            </li>
-            <li>
-                <strong>Project 2: Selenium Grid Setup</strong><br />
-                Designed and implemented a Selenium Grid for parallel test execution across multiple browsers.<br />
-                <a href="https://github.com/your-username/project2">View on GitHub</a>
-            </li>
-        </ul>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a QA Automation Engineer passionate about delivering high-quality software with automated testing.
+    I specialize in JavaScript, Cypress, Selenium, and scalable test strategies across agile teams.</p>
+  </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>📄 <a href="https://link-to-your-resume.com">View My Resume</a></p>
-        <p>🔗 <a href="https://www.linkedin.com/in/anubhagaur/">LinkedIn</a></p>
-        <p>📞 Phone: +91-8879543018</p>
-    </section>
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>QA Automation Strategy & Frameworks</li>
+      <li>Cypress – End-to-End Testing</li>
+      <li>Selenium – Browser Compatibility Testing</li>
+      <li>JavaScript, Mocha, Chai</li>
+    </ul>
+  </section>
 
-    <footer>
-        &copy; 2025 Anubha Gaur
-    </footer>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>E2E Automation for E-commerce</h3>
+        <p>Comprehensive Cypress test suite for login, cart, checkout & payment flows.</p>
+        <a href="https://github.com/your-username/ecommerce-cypress" target="_blank">🔗 View on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Selenium Grid Implementation</h3>
+        <p>Set up a parallel Selenium Grid test infrastructure with Docker & Jenkins.</p>
+        <a href="https://github.com/your-username/selenium-grid" target="_blank">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>Coming soon: Personal insights, QA best practices, and automation tutorials.</p>
+    <!-- Optional: You can embed blog cards or link to dev.to / Medium -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+    <p>📄 <a href="https://link-to-your-resume.com" target="_blank">View My Resume</a></p>
+    <p>🔗 <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a></p>
+    <p>📞 Phone: +91-8879543018</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Anubha Gaur. Built with HTML & CSS.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+
+    // Optional: set theme based on system preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
 
 </body>
 </html>
