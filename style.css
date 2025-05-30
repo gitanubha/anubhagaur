@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    transition: background-color 0.5s ease;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+section {
+    margin: 40px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+.skill-list span {
+    background: #0073e6;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
