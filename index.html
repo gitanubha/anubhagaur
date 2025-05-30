@@ -1,205 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anubha Gaur | QA Automation Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0d0d2b;
-      --text: #ffffff;
-      --accent: #64ffda;
-      --card: rgba(255, 255, 255, 0.1);
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: url('https://via.placeholder.com/1920x1080.png?text=Starry+Background') center/cover fixed;
-      color: var(--text);
-      scroll-behavior: smooth;
-    }
-
-    header {
-      text-align: center;
-      padding: 6rem 2rem 3rem;
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(4px);
-      position: relative;
-    }
-
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--accent);
-      position: absolute;
-      bottom: -60px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    nav {
-      background-color: rgba(0, 0, 0, 0.6);
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(4px);
-    }
-
-    nav a {
-      margin: 0 1rem;
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #fff;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 4rem auto;
-      padding: 2rem;
-      background: var(--card);
-      border-radius: 12px;
-      backdrop-filter: blur(8px);
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      color: var(--accent);
-    }
-
-    .skills ul, .contact-info {
-      list-style: none;
-      padding: 0;
-    }
-
-    .skills li, .contact-info li {
-      margin-bottom: 1rem;
-      padding-left: 1rem;
-      border-left: 3px solid var(--accent);
-    }
-
-    .projects {
-      display: grid;
-      gap: 2rem;
-    }
-
-    .project {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .project img {
-      max-width: 200px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px var(--accent);
-    }
-
-    .project-details {
-      flex: 1;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: rgba(0, 0, 0, 0.6);
-      margin-top: 4rem;
-      backdrop-filter: blur(4px);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      .project {
-        flex-direction: column;
-      }
-
-      header {
-        padding: 5rem 2rem 2rem;
-      }
-
-      .profile-pic {
-        width: 100px;
-        height: 100px;
-        bottom: -50px;
-      }
-
-      nav {
-        flex-wrap: wrap;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anubha | QA Automation Lead</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Anubha</h1>
+        <h2>QA Automation Lead | GenAI Specialist</h2>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
 
-  <header>
-    <h1>Anubha Gaur</h1>
-    <p>QA Automation Engineer | Cypress | Selenium | JavaScript</p>
-    <img src="https://via.placeholder.com/150" alt="Profile" class="profile-pic" />
-  </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Results-driven QA Automation Lead with 11+ years of experience, specializing in GenAI, prompt engineering, and test automation.</p>
+    </section>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a QA Automation Engineer with experience designing scalable test frameworks and improving release pipelines.
-       My strengths lie in JavaScript-based automation with Cypress and Selenium, ensuring fast and reliable testing.</p>
-  </section>
-
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Cypress | Selenium | JavaScript</li>
-      <li>Test Automation Framework Design</li>
-      <li>CI/CD: GitHub Actions, Jenkins</li>
-      <li>Cross-browser, Responsive UI Testing</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <img src="https://via.placeholder.com/200x120.png?text=E2E+Tests" alt="Project 1" />
-        <div class="project-details">
-          <h3>E2E Automation for E-commerce</h3>
-          <p>Developed Cypress-based test cases for login, shopping cart, and checkout validation for a scalable React app.</p>
-          <a href="https://github.com/your-username/ecommerce-cypress" target="_blank">🔗 View on GitHub</a>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="job">
+                <h3>Senior Consultant | Capgemini Engineering</h3>
+                <p>Led automation initiatives for AI/ML platforms.</p>
+            </div>
+            <div class="job">
+                <h3>Senior Software Analyst | Accenture</h3>
+                <p>Automated testing processes for retail and supply chain systems.</p>
+            </div>
         </div>
-      </div>
-      <div class="project">
-        <img src="https://via.placeholder.com/200x120.png?text=Selenium+Grid" alt="Project 2" />
-        <div class="project-details">
-          <h3>Selenium Grid Setup</h3>
-          <p>Built a Selenium Grid system using Docker and Jenkins to execute tests in parallel across Chrome and Firefox.</p>
-          <a href="https://github.com/your-username/selenium-grid" target="_blank">🔗 View on GitHub</a>
-        </div>
-      </div>
-    </div>
+    </section>
 
-::contentReference[oaicite:13]{index=13}
- 
+    <section id="skills">
+        <h2>Skills</h2>
+        <canvas id="skillsChart"></canvas>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📧 Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>🔗 LinkedIn: <a href="https://linkedin.com/in/your-profile">LinkedIn Profile</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Anubha | Powered by GitHub Pages</p>
+    </footer>
+</body>
+</html>
