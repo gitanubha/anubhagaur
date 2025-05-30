@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Portfolio loaded successfully!");
+    const starContainer = document.createElement("div");
+    starContainer.classList.add("stars");
+
+    for (let i = 0; i < 100; i++) {
+        let star = document.createElement("div");
+        star.classList.add("star");
+        star.style.top = Math.random() * 100 + "vh";
+        star.style.left = Math.random() * 100 + "vw";
+        star.style.animationDuration = Math.random() * 2 + "s";
+        starContainer.appendChild(star);
+    }
+
+    document.body.appendChild(starContainer);
 
     // Dark Mode Toggle
     const darkModeToggle = document.getElementById("darkModeToggle");
